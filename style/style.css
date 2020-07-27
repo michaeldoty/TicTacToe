@@ -17,6 +17,9 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: rgb(240, 240, 240);
+  overflow: hidden;
+  margin: 10px;
+
 
 }
 
@@ -24,6 +27,7 @@ body {
   display: grid;
   grid-template-columns: 200px 1fr 1fr 100px 100px;
   grid-template-rows: 75px 75px;
+  width: 99vw;
 
 }
 
@@ -58,12 +62,11 @@ body {
 }
 
 .whosTurn {
-  display: flex;
+  display: grid;
   grid-column: 1 / 2;
   grid-row: 1;
-  padding-left: 20px;
-  justify-content: left;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: end;
   color: rgb(95, 95, 95);
   font-size: 1.5em;
   margin: 0;
@@ -73,10 +76,9 @@ body {
   display: flex;
   grid-column: 1 / 2;
   grid-row: 2;
-  padding: 20px;
-  justify-content: left;
-  align-items: flex-start;
   color: rgb(95, 95, 95);
+  margin-top: 10px;
+  justify-content: center;
   font-size: 1em;
 }
 
@@ -84,41 +86,43 @@ body {
   display: grid;
   grid-column: 4 / 6;
   grid-row: 1;
-  justify-content: right;
+  justify-content: center;
   align-items: end;
-  padding-right:50px;
   color: rgb(95, 95, 95);
   font-size: 1.5em;
   margin: 0;
 }
 
-#scoreX {
-  display: grid;
-  grid-column: 4;
+.score {
+  display: flex;
+  grid-column: 4 / 6;
+  column-gap: 20px;
   grid-row: 2;
-  padding-left: 35px;
-
-  justify-content: left;
-  align-items: flex-start;
   color: rgb(95, 95, 95);
-  font-size: 1.5em;
+  justify-content: center;
+
+
+}
+
+#scoreX {
+  display: flex;
+  grid-column: 4;
+  color: rgb(95, 95, 95);
+  font-size: 1.25em;
 }
 
 #scoreO {
-  display: grid;
+  display: flex;
   grid-column: 5;
-  grid-row: 2;
-  padding-right: 50px;
   justify-content: right;
-  align-items: flex-start;
   color: rgb(95, 95, 95);
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 board {
   display: grid;
   height: 80%;
-  width: 100vw;
+  width: 99vw;
   justify-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
