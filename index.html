@@ -10,7 +10,22 @@
 <body>
   <header class="header">
     <h1 class='title'>TicTacToe</h1>
-    <p class='subtitle'>you know how to play...</p>
+    <button id="myBtn" class='subtitle'>Enter Players Names</button>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class='player1'>
+          <label for="first" class="player1Label"><b>Enter Player 1's Name</b></label>
+          <input type="text" placeholder="Who is X's" name="playerX" required>
+        </div>
+        <div class='player2'>
+          <label for="first" class="player2Label"><b>Enter Player 1's Name</b></label>
+          <input type="text" placeholder="Who is O's" name="playerX" required>
+        </div>
+        <button class='play'>Play!</button>
+      </div>
+    </div>
 
     <p class='whosTurn'>X's Turn</p>
     <button class='reset' onclick='reset()''>Reset Game</button>

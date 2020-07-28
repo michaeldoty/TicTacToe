@@ -27,7 +27,7 @@ body {
   display: grid;
   grid-template-columns: 200px 1fr 1fr 100px 100px;
   grid-template-rows: 75px 75px;
-  width: 99vw;
+  width: 98vw;
 
 }
 
@@ -166,5 +166,103 @@ board {
   border-color: rgb(190, 190, 190);
   border-style: solid;
   padding: 0px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  display: grid;
+
+  grid-template-columns: 98% 2%;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 15% auto; /* 15% from the top and centered */
+  height: 200px;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+
+}
+
+.player1 {
+  display: grid;
+  grid-row: 1;
+  justify-content: center;
+  color: rgb(95, 95, 95);
+
+}
+
+.player2 {
+  display: grid;
+  grid-row: 2;
+  justify-content: center;
+  color: rgb(95, 95, 95);
+}
+
+.player1Label {
+  display: grid;
+  justify-content: center;
+  color: rgb(95, 95, 95);
+}
+
+.player2Label {
+  padding-top: 20px;
+  display: grid;
+  justify-content: center;
+  color: rgb(95, 95, 95);
+}
+
+.play {
+  display: grid;
+  grid-row: 3;
+  justify-self: center;
+  margin-top: 20px;
+  padding-top: 7px;
+  width: 60px;
+  height: 30px;
+}
+
+
+/* The Close Button */
+.close {
+  display: grid;
+  grid-column: 2;
+  justify-content: right;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input[type=text] {
+  display: grid;
+  width: 100%;
+  height: 30px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  vertical-align: middle;
 }
 
